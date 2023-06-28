@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- My CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav id="nav-bar" class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="snap-logo navbar-brand" href="#">
+        <img src="images/logo.svg" alt="Snap Logo">
+      </a>
+      <button class="navbar-toggler menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <img src="images/icon-menu.svg" role="button" alt="Hamburger Icon">
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5></h5>
+          <img class="exit-button" data-bs-dismiss="offcanvas" src="images/icon-close-menu.svg" alt="X-Icon">
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="item-navbar nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Features
+                <img class="icon-down" src="images/icon-arrow-down.svg" alt="Arrow Down Icon">
+                <img class="icon-up hide" src="images/icon-arrow-up.svg" alt="Arrow Up Icon">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">
+                  <img src="images/icon-todo.svg" alt="Todo Icon">Todo List</a>
+                </li>
+                <li><a class="dropdown-item" href="#">
+                  <img src="images/icon-calendar.svg" alt="Calendar Icon">Calendar</a></li>
+                <li><a class="dropdown-item" href="#">
+                  <img src="images/icon-reminders.svg" alt="Alarm Icon">Reminders</a></li>
+                <li><a class="dropdown-item" href="#">
+                  <img src="images/icon-planning.svg" alt="Clock Icon">Planning</a></li>
+              </ul>
+            </li>
+            <li class="item-navbar nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Company
+                <img class="icon-down" src="images/icon-arrow-down.svg" alt="Arrow Down Icon">
+                <img class="icon-up hide" src="images/icon-arrow-up.svg" alt="Arrow Up Icon">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">History</a></li>
+                <li><a class="dropdown-item" href="#">Our Team</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li class="item-navbar nav-item">
+              <a class="nav-link" aria-current="page" href="#">Carees</a>
+            </li>
+            <li class="item-navbar nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          <div>
+            <a class="item-navbar navbar-link" href="#">Login</a>
+            <a class="item-navbar navbar-link navbar-register" href="#">Register</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </nav>
+
+  <!-- Title -->
+  <section id="title">
+    <div class="row">
+      <div class="image-mobile col-lg-6">
+        <img class="hero-image" src="images/image-hero-mobile.png" alt="Guy with a computer">
+      </div>
+      <div class="col-lg-6">
+        <h1>Make Remote Work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="btn title-button">Learn More</button>
+        <div class="icons-group row">
+          <div class="col-3">
+            <img class="logo-icon" src="images/client-databiz.svg" alt="Databiz Logo">
+          </div>
+          <div class="col-3">
+            <img class="logo-icon" src="images/client-audiophile.svg" alt="Audio-phile Logo">
+          </div>
+          <div class="col-3">
+            <img class="logo-icon" src="images/client-meet.svg" alt="Meet Logo">
+          </div>
+          <div class="col-3">
+            <img class="logo-icon" src="images/client-maker.svg" alt="Marker Logo">
+          </div>
+        </div>
+      </div>
+      <div class="image-desktop col-lg-6">
+        <img class="hero-image" src="images/image-hero-desktop.png" alt="Guy with a computer">
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://lyes-mersel.netlify.app/" target="_blank">Lyes MERSEL</a>.
+    </div>
+  </footer>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <!-- deSVG -->
+  <script src="//cdn.jsdelivr.net/npm/desvg@1.0.2/desvg.min.js"></script>
+  <!-- My JS file -->
+  <script src="index.js"></script>  
+
+</body>
+</html>
