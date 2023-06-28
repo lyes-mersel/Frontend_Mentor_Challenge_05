@@ -6,7 +6,7 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 
 
 # Screenshot
-![](./screenshot.png)
+![](./images/screenshot.png)
 
 
 
