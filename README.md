@@ -9,8 +9,10 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 ![](./screenshot.jpg)
 
 
-### Built with
-- Pure HTML + CSS
+
+# Build with
+- HTML5 + CSS3
+- JS + Jquery
 
 
 # Author
